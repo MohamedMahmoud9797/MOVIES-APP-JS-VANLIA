@@ -30,7 +30,6 @@ let response, apiResult ,final
    response = await  fetch(`https://api.themoviedb.org/3/${data}/${coll}?api_key=eba8b9a7199efdcb0ca1f96879b83c44&fbclid=IwAR2xdWVYRx1RaONlkJn0FWVYFGphnTOagQW8wokQVhiEZhP_FKIULFSSMeo&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate`)
   apiResult =  await response.json()
   final  = await apiResult.results
-  console.log(final)
   display()
 }
 getApi( "movie" ,"popular");
